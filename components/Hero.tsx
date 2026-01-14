@@ -1,4 +1,3 @@
-cat << 'EOF' > components/Hero.tsx
 import React from 'react';
 import { ArrowRight, CheckCircle, Star, Zap, Snowflake } from 'lucide-react';
 
@@ -143,4 +142,3 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
     </section>
   );
 };
-EOF
