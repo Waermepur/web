@@ -106,24 +106,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             </div>
           </div>
 
-          {/* VIDEO */}
+          {/* BILD BEREICH (ehemals Video) */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2 relative flex justify-center">
 
             <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-red-600/20 to-transparent rounded-full blur-[90px] -translate-x-1/2 -translate-y-1/2 animate-energy-pulse" />
 
             <div className="relative z-10 w-full max-w-xl animate-float-slow">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                poster="/logo.png"
-                className="w-full h-auto rounded-xl bg-black shadow-2xl"
-              >
-                <source src="/waermepumpe.mp4" type="video/mp4" />
-                Ihr Browser unterstützt dieses Video nicht.
-              </video>
+              <img
+                src="/pumpe.png"
+                alt="Wärme Pur Wärmepumpe"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
             </div>
 
             <div className="absolute -bottom-6 -left-4 md:bottom-10 md:-left-12 z-20">
