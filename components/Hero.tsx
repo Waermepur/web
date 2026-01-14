@@ -106,29 +106,34 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             </div>
           </div>
 
-          {/* BILD BEREICH (ehemals Video) */}
+          {/* BILD BEREICH */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2 relative flex justify-center">
 
+            {/* Hintergrund-Glow (bleibt starr) */}
             <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-red-600/20 to-transparent rounded-full blur-[90px] -translate-x-1/2 -translate-y-1/2 animate-energy-pulse" />
 
+            {/* Schwebender Container (Alles hier drin bewegt sich mit) */}
             <div className="relative z-10 w-full max-w-xl animate-float-slow">
+              
               <img
-                src="/pumpe.png"
+                src="pumpe.png"
                 alt="Wärme Pur Wärmepumpe"
                 className="w-full h-auto rounded-xl shadow-2xl"
               />
-            </div>
 
-            <div className="absolute -bottom-6 -left-4 md:bottom-10 md:-left-12 z-20">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-3 pr-5 rounded-2xl shadow-2xl flex gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-white rounded-full flex items-center justify-center">
-                  <Snowflake className="text-blue-500 w-6 h-6" />
-                </div>
-                <div>
-                  <div className="text-white font-bold text-sm">Polar-Effizienz</div>
-                  <div className="text-blue-200 text-xs">Leistung bis −25 °C</div>
+              {/* Polar-Box schwebt jetzt mit */}
+              <div className="absolute -bottom-6 -left-4 md:bottom-10 md:-left-12 z-20">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 p-3 pr-5 rounded-2xl shadow-2xl flex gap-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-white rounded-full flex items-center justify-center">
+                    <Snowflake className="text-blue-500 w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-white font-bold text-sm">Polar-Effizienz</div>
+                    <div className="text-blue-200 text-xs">Leistung bis −25 °C</div>
+                  </div>
                 </div>
               </div>
+
             </div>
 
           </div>
