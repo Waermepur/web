@@ -6,13 +6,15 @@
 
     <title>Wärme Pur GmbH – Heizung, Sanitär & Wärmepumpen | Lünen-Brambauer</title>
 
+    <!-- Tailwind CDN (bewusst, passend zu deinem Setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Base Styles -->
     <style>
       html {
         scroll-behavior: smooth;
@@ -28,7 +30,7 @@
   <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
 
-    <!-- Vite Entry -->
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- ✅ RICHTIGER ENTRY FÜR DEIN PROJEKT -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
